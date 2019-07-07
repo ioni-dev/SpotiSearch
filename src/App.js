@@ -16,9 +16,11 @@ class App extends React.Component {
     }
     this.onSearch = this.onSearch.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
+    this.onPageChange = this.onPageChange.bind(this);
   }
+
   componentDidMount() {
-    // Set token
+    // getting the token
     let _token = hash.access_token;
 
     if (_token) {
@@ -29,14 +31,15 @@ class App extends React.Component {
 
     }
   }
+  // Getting the value from the searchbox to the state
   onSearchChange = (e) => {
     e.preventDefault();
     this.setState({
       searchField: e.target.value
     });
   }
-
-  onSearch = async () => {
+  // Fetching the spotify api 
+  onSearch = async (props) => {
     const { searchField, offset, token } = this.state;
 
     const FETCH_URL = `${BASE_URL}q=${encodeURIComponent(searchField)}&type=track&offset=${offset}`;
@@ -54,11 +57,30 @@ class App extends React.Component {
       })
   }
 
+  // Setting the offset from the button, this will change the page from the spotify api
+  onPageChange = (props) => {
+
+    let { offset } = this.state;
+
+    if (props === 'next') {
+      this.setState({ offset: (offset += 10) });
+      // and calling this function, in this way i can fetch the api with the new offset value
+      this.onSearch();
+    }
+    if (props === 'previous') {
+      if (this.state.offset > 0) {
+        this.setState({ offset: (offset -= 10) })
+        this.onSearch();
+      } else console.log('offset is already 0');
+    }
+
+
+  }
   render() {
     const { tracks } = this.state;
     return (
       <div className="App">
-        {!this.state.token ? <Login /> : <Main onSearch={this.onSearch} onSearchChange={this.onSearchChange} tracksAvailable={tracks} />}
+        {!this.state.token ? <Login /> : <Main onSearch={this.onSearch} onSearchChange={this.onSearchChange} tracksAvailable={tracks} onPageChange={this.onPageChange} />}
       </div>
     );
   }

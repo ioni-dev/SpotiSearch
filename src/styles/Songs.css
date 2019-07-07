@@ -27,6 +27,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 30px);
     justify-items: center;
+    margin-bottom: 5vh;
 }
 .pageBtn{
     width: 150px;
