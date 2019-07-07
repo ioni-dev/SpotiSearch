@@ -1,0 +1,32 @@
+.login-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.title{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    background-color: lightseagreen;  
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    display: grid;
+    align-items: center;
+}
+.btn:focus,
+.btn:hover {
+  background-color: #30A098;
+  color: White;
+}

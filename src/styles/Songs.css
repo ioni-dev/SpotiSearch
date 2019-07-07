@@ -1,0 +1,48 @@
+.tracks-titles{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 2vw;
+}
+.card-container{
+    background: white;
+    padding: 2vw;
+    border-radius: 10px;
+    line-height: .8;
+}
+.song-title{
+    font-size: 1.8em;
+    color: darkslategray;
+    font-weight: 300;
+}
+.artist{
+    font-size: 1.5em;
+    color: grey;
+}
+.release{
+    font-style: italic;
+    color: grey;
+}
+.pageBtns{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30px);
+    justify-items: center;
+}
+.pageBtn{
+    width: 150px;
+    height: 30px;
+    background-color: lightseagreen;  
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+   
+}
+.nextBtn{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+.prevBtn{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
