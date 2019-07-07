@@ -1,4 +1,4 @@
-# spotiSearch
+# SpotiSearch
 
 I built this app to consume the spotify api and i applied the best practices
 
