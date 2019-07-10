@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SpotiSearch/static/css/main.0509c6d6.chunk.css",
-    "main.js": "/SpotiSearch/static/js/main.b4e175c8.chunk.js",
-    "main.js.map": "/SpotiSearch/static/js/main.b4e175c8.chunk.js.map",
+    "main.js": "/SpotiSearch/static/js/main.19659816.chunk.js",
+    "main.js.map": "/SpotiSearch/static/js/main.19659816.chunk.js.map",
     "runtime~main.js": "/SpotiSearch/static/js/runtime~main.7e98621c.js",
     "runtime~main.js.map": "/SpotiSearch/static/js/runtime~main.7e98621c.js.map",
     "static/js/2.e1780bb9.chunk.js": "/SpotiSearch/static/js/2.e1780bb9.chunk.js",
     "static/js/2.e1780bb9.chunk.js.map": "/SpotiSearch/static/js/2.e1780bb9.chunk.js.map",
     "index.html": "/SpotiSearch/index.html",
-    "precache-manifest.43024a6d5a87297fd8cfe8b4499f8053.js": "/SpotiSearch/precache-manifest.43024a6d5a87297fd8cfe8b4499f8053.js",
+    "precache-manifest.a2a342b2e88e2bfa1f2ecf6cbffbf037.js": "/SpotiSearch/precache-manifest.a2a342b2e88e2bfa1f2ecf6cbffbf037.js",
     "service-worker.js": "/SpotiSearch/service-worker.js",
     "static/css/main.0509c6d6.chunk.css.map": "/SpotiSearch/static/css/main.0509c6d6.chunk.css.map"
   }

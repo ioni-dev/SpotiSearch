@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e18dfd8222f1b3fefa5a52d438a435e4",
+    "revision": "7ed4ee8d711864bc09f3e52222a162fd",
     "url": "/SpotiSearch/index.html"
   },
   {
-    "revision": "fcb20c769a7f0746d337",
+    "revision": "4f120197efbf2af8f9c4",
     "url": "/SpotiSearch/static/css/main.0509c6d6.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SpotiSearch/static/js/2.e1780bb9.chunk.js"
   },
   {
-    "revision": "fcb20c769a7f0746d337",
-    "url": "/SpotiSearch/static/js/main.b4e175c8.chunk.js"
+    "revision": "4f120197efbf2af8f9c4",
+    "url": "/SpotiSearch/static/js/main.19659816.chunk.js"
   },
   {
     "revision": "9ac6e42083ccd56db542",
