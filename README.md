@@ -3,7 +3,7 @@
 Link:
 https://ioni-dev.github.io/SpotiSearch/
 
-I built this app to consume the spotify api and i applied the best practices
+I builded this app to consume the spotify api and i applied the best practices
 
 - Destructuring
 - ES6
